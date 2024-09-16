@@ -12,4 +12,4 @@ def hello():
 if __name__ == "__main__":
     # Defina a porta a partir da variável de ambiente PORT, ou use 5000 por padrão
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(port=port)
