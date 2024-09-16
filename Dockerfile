@@ -2,7 +2,7 @@
 FROM python:3.9-slim
 
 # Work directory
-WORKDIR .
+WORKDIR /main
 
 # Copy requirements and install dependencies
 COPY requirements.txt requirements.txt
@@ -20,6 +20,6 @@ ENV PORT=5000
 EXPOSE 5000
 
 # Certifique-se de que o comando para rodar a aplicação é o correto
-CMD ["python", "main.py"]
+CMD ["python", "../main.py"]
 
 
