@@ -16,6 +16,7 @@ RUN pip install -r requirements.txt
 
 ENV PORT=5000
 EXPOSE 5000
+ENV FLASK_APP=main.py
 
 # Certifique-se de que o comando para rodar a aplicação é o correto
 #CMD ["python", "main.py"]
