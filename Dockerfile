@@ -13,6 +13,7 @@ RUN chmod +x venv/bin/activate
 RUN . venv/bin/activate
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
+RUN pip install Flask
 
 ENV PORT=5000
 EXPOSE 5000
