@@ -2,7 +2,7 @@
 FROM python:3.9-slim
 
 # Work directory
-WORKDIR ./
+WORKDIR .
 
 # Copy requirements and install dependencies
 COPY requirements.txt requirements.txt
