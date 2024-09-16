@@ -13,6 +13,9 @@ RUN chmod +x venv/bin/activate
 RUN venv/bin/activate
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
 RUN docker ps
 
 
