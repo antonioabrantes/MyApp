@@ -18,6 +18,6 @@ ENV PORT=5000
 EXPOSE 5000
 
 # Certifique-se de que o comando para rodar a aplicação é o correto
-CMD ["python", "main.py"]
-
+#CMD ["python", "main.py"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
 

@@ -10,6 +10,5 @@ def hello():
     return render_template('index.html',name=name)
 
 if __name__ == "__main__":
-    # Defina a porta a partir da variável de ambiente PORT, ou use 5000 por padrão
-    port = int(os.environ.get("PORT", 5000))
-    app.run(port=port)
+    port = int(os.environ.get("PORT", 5000))  # Pegue a porta da variável de ambiente ou use 5000
+    app.run(host="0.0.0.0", port=port) 
