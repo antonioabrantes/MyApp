@@ -1,12 +1,13 @@
 #https://github.com/templates-back4app/containers-python-flask-sample
 
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "ola mundo!"
+    name = "ola mundo, tudo bem!"
+    return render_template("index.html",name=name)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
