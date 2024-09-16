@@ -8,13 +8,12 @@ WORKDIR /main
 COPY requirements.txt requirements.txt
 RUN dir
 RUN pip install virtualenv
-RUN virtualenv venv
+RUN python -m venv venv
 RUN chmod +x venv/bin/activate
-RUN venv/bin/activate
+RUN . venv/bin/activate
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-RUN docker ps
-
+#RUN docker ps
 
 
